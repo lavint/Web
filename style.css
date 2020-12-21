@@ -27,6 +27,19 @@ body {
     background: #efeee7;
 }
 
+@media (max-width: 1000px) {
+    body {
+        border-left: 50px solid rgba(0, 0, 255, 0.378);
+        padding: 10px;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 100%;
+        color: rgb(136, 24, 241);
+        background: #f8ec8f;
+    }
+}
+
 
 img {
   box-shadow: 10px 10px 5px rgb(61, 58, 61);
@@ -155,9 +168,59 @@ ul {
   }
 
 
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 10px;
+  }
+
+  #navbuttons {
+    border-style: none;
+  }
+  
+  /* Inline buttons */
+  .navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #5191fd;
+    border-radius: 3px;
+  }
+  
+  /* Get rid of the default link styles here */
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  #nav-select {
+    visibility: hidden;
+  }
+
+  @media (max-width: 1000px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
+
   /* Select elements by ID */
-  #id_1,
+  /* #id_1,
   #id_2,
   #id_3 {
   float: left;
-  }
+  } */
